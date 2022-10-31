@@ -6,7 +6,7 @@ import java.util.Scanner;
  * 
  * Assignment:  Example 5 Pythagoras
  ************************************/
-public class CS20SExample5Pythagoars{
+public class CS20SExample5Pythagoaras{
     public static void main(String[] args){
     // **** constants ****
         
