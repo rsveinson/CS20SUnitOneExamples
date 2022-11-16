@@ -1,55 +1,54 @@
 import java.util.Scanner;
 import javax.swing.JOptionPane;
+import java.text.NumberFormat;
 
-/* *******************************
- * name:    Sveinson
- * Class:   CS20S
+/* ****************************************
+ * Name:        Sveinson
+ * Class:       CS20S
  * 
  * Assignment:  AxQy
- ************************************/
+ **********************************************/
 public class FormatTemplateV1{
     public static void main(String[] args){
-    // **** constants ****
-        
-        /* a new line character that will work
-         * on any computer system. We could use
-         * \n but this code doesn't work on all computer
-         */
+    // **** Constants ****
+    
         final String nl = System.lineSeparator();
     
     // **** variables ****
     
-        String banner = "";     // output banner
-        String prompt = "";     // prompt for input
+        String banner = "";         // output banner
+        String prompt = "";         // prompt for input
         
-        String strin = "";      // get input
-        String strout = "";     // formatted string for output
+        String strin = "";          // intput
+        String strout = "";         // used for formatted output
     
-    // **** objects ****
-    
+    // **** Objects ****
+        // create a Scanner object to read input from the keyboard
         Scanner scanner = new Scanner(System.in);
+        NumberFormat currency = NumberFormat.getCurrencyInstance();
     
     // **** banner ****
     
-        banner = "**************************" + nl;
+        banner = "*****************************" + nl;
         banner += "Name:        Sveinson" + nl;
         banner += "Class:       CS20S" + nl;
         banner += "Assignment:  AxQy" + nl;
-        banner += "**************************" + nl;
+        banner += "******************************";
         
         // now print the banner to the terminal window
         System.out.println(banner);
     
     // **** input ****
     
-    // **** pocessing ****
+    // **** processing ****
     
     // **** output ****
     
     // **** closing message ****
     
-        System.out.println("end of program.");
-    
-    }//end main
+        System.out.println();
+        System.out.println("end of program");
+        
+    }// end main
 
 }// end class
