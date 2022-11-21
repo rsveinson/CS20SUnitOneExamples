@@ -11,8 +11,8 @@ import java.time.LocalDate;
  *              and the current date, say 11/ 21 for November 21
  *              determine if a person has had their birthday
  *              
- *              We will need to test this comprehensively using cases and tes
- *              data
+ *              We will need to test this comprehensively using
+ *              test cases and test data
  **********************************************/
 public class CS20SCaseTestingExample{
     public static void main(String[] args){
@@ -31,7 +31,7 @@ public class CS20SCaseTestingExample{
          */
         int currentMonth = currentDate.getMonth().getValue();
         int currentDay = currentDate.getDayOfMonth();
-        //System.out.println(currentMonth + "/" + currentDay);
+        System.out.println(currentMonth + "/" + currentDay);
         
     
     // **** variables ****
@@ -72,7 +72,7 @@ public class CS20SCaseTestingExample{
         birthDay = scanner.nextInt();
         
         System.out.println("You were born on " + birthMonth +"/" + birthDay);
-        
+        System.out.println("The current date is " + currentMonth + "/" + currentDay);
     
     // **** processing ****
     
