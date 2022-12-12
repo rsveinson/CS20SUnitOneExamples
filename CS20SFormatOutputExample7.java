@@ -22,14 +22,7 @@ public class CS20SFormatOutputExample7{
         String strin = "";          // intput
         String strout = "";         // used for formatted output
         
-        // declare some variables of differnt types
-        int n1 = 10;
-        int n2 = 123;
         
-        double d1 = 12.23344523423;
-        double price = 39.955645;
-        
-        String st = "Winter";
     
     // **** Objects ****
         // create a Scanner object to read input from the keyboard
@@ -59,16 +52,24 @@ public class CS20SFormatOutputExample7{
      *  we'll cover the basics and, for the most part, all of
      *  the codes you'll need
      */
-    
-    System.out.format("%20s %6d you can include text here as well %10.4f%s",st, n1, d1, nl);
-    System.out.format("%-20s %25s %6d %10.2f%s",st, "- left aligns text in the field" ,45, d1, nl);
-    
-    strout = String.format("%20s %6d you can include text here as well %10.4f%s",st, n1, d1, nl);
-    System.out.println(strout);
-    JOptionPane.showMessageDialog(null, banner + strout);
-    
-    System.out.format("The cost is: %8s%s", currency.format(price), nl);
-    
+    // declare some variables of differnt types
+        int n1 = 10;
+        int n2 = 123;
+        
+        double d1 = 12.23344523423;
+        double price = 39.955645;
+        
+        String st = "Winter";
+        System.out.format("%20s %6d you can include text here as well %10.4f%s",st, n1, d1, nl);
+        System.out.format("%-20s %25s %6d %10.2f%s",st, "- left aligns text in the field" ,45, d1, nl);
+        
+        strout = String.format("%20s %6d you can include text here as well %10.4f%s",st, n1, d1, nl);
+        System.out.println(strout);
+        JOptionPane.showMessageDialog(null, banner + strout);
+        
+        System.out.format("The cost is: %8s, ", currency.format(price), nl);
+        System.out.format("%8s%s", currency.format(d1), nl);
+        
     // **** closing message ****
     
         System.out.println();
